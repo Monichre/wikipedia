@@ -1,13 +1,59 @@
+/*Page Hacks for better CSS*/
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+/*-----Page Begins----*/
+
 body {
   padding-top: 50px;
   font-family: arial;
   font-weight: 200;
+  width: 100%;
+  height:100%;
+  background-image: linear-gradient(to top, #f6f6f6, #f6f6f6, #f6f6f6,#f6f6f6,#f6f6f6,#f6f6f6,#f6f6f6,#f6f6f6,#f6f6f6,#f6f6f6,#f6f6f6,#f6f6f6,#f6f6f6,#f6f6f6,#f6f6f6, #fff);
+}
+
+.container {
+  margin: auto;
+  width: 1300px;
+  height: 100%;
+
 }
 
 aside {
   margin: auto;
   float:left;
-  margin-left: 5px;
+  padding: 5px;
+  margin-left: -5px;
+  margin-top: 0px;
+}
+
+aside img {
+  margin-bottom: 30px;
+  margin-left: 20px;
 }
 
 aside ul {
@@ -15,9 +61,9 @@ aside ul {
 }
 
 aside ul h3 {
-  color: #999;
+  color: #474747;
   font-weight:normal;
-  font-size: 85%;
+  font-size: 88%;
 }
 
 aside ul li {
@@ -25,11 +71,19 @@ aside ul li {
   line-height: 155%;
   margin-left: 15px;
   font-size: 85%;
-  color: darkblue;
+  color: #2e63b9;
 }
 
 aside ul li a {
   text-decoration: none;
+}
+
+aside.col-lg-2 {
+  width: 13.5%;
+}
+
+aside .first ul {
+  margin-right: 25px;
 }
 
 hr {
@@ -38,4 +92,112 @@ hr {
     margin-top: -7px;
     margin-bottom: -12px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+}
+
+.bodycontent {
+  width: 1000px;
+  height: 100%;
+  margin-left: 180px;
+  border-left: 1px solid #a7d7f9;
+  margin-top: 60px;
+  background-color: #fff;
+}
+
+header {
+  padding-right: 30px;
+  text-align: center;
+  font-size: 105%;
+}
+
+header h1 {
+  font-size: 150%;
+}
+
+img.col-lg-11 {
+  margin-left: 40px;
+}
+
+.top {
+  margin-left: 55px;
+  background-color: #f9f9f9;
+  border: 1px solid #dddddd;
+  margin-top: 10px;
+}
+
+.five ul {
+  padding-top: 25px;
+}
+
+.five ul li {
+  color: #2e63b9;
+}
+
+#blue {
+  color: #0645ad;
+}
+
+.col-lg-6 {
+  padding-left: 20px;
+}
+
+/*this is the blue-green css section likely just margin and shit*/
+
+.green-blue {
+  margin-left: 35px;
+}
+
+/*This is the green div css*/
+
+.green {
+  margin-right: 5px;
+  padding: 15px;
+  margin-left: 20px;
+  background-color: #f5fffa;
+  margin-top: 20px;
+  border: 1px solid #BADECC;
+}
+.green h1 {
+  font-size: 17px;
+  font-size: 17px;
+  font-weight:bold;
+  word-spacing: 2px;
+  padding: 5px;
+  margin-top:-10px;
+  border: 1px solid #97BFAB;
+  background-color: #cef2e0;
+
+}
+
+.green img {
+  float: right;
+}
+
+
+
+.green li {
+
+}
+
+/*This is the blue div css*/
+
+.blue {
+  padding: 15px;
+  margin-left: 5px;
+  background-color: #f5faff;
+  margin-top: 20px;
+  border: 1px solid #BFD0E0;
+}
+
+.blue h1 {
+  font-size: 17px;
+  font-weight:bold;
+  word-spacing: 2px;
+  padding: 5px;
+  margin-top:-10px;
+  border: 1px solid #97A2AD;
+  background-color: #C1D4E8;
+}
+
+.blue li {
+  line-height: 165%;
 }
