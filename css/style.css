@@ -1,0 +1,41 @@
+body {
+  padding-top: 50px;
+  font-family: arial;
+  font-weight: 200;
+}
+
+aside {
+  margin: auto;
+  float:left;
+  margin-left: 5px;
+}
+
+aside ul {
+  padding-left: 8px;
+}
+
+aside ul h3 {
+  color: #999;
+  font-weight:normal;
+  font-size: 85%;
+}
+
+aside ul li {
+  list-style-type: none;
+  line-height: 155%;
+  margin-left: 15px;
+  font-size: 85%;
+  color: darkblue;
+}
+
+aside ul li a {
+  text-decoration: none;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    margin-top: -7px;
+    margin-bottom: -12px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+}
